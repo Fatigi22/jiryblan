@@ -1,6 +1,5 @@
-const { default: mongoose } = require('mongoose')
 const mongooose=require('mongoose')
-const data =new mongoose.Schema({
+const data =new mongooose.Schema({
     nom: { type: String, required: true },
     description: { type: String, required: true },
     dateDebut: { type: Date, required: true },

@@ -1,6 +1,6 @@
 const mongoose=require("mongoose")
 const Taches = require("./Taches")
-const { ref, required } = require("joi")
+
 const Data=new mongoose.Schema({
     nom: { type: String, required: true },
     type : { type :String , required:true},
@@ -10,3 +10,5 @@ const Data=new mongoose.Schema({
        ref:'Taches',
        required:true
     }})
+    const Rouseeurce=mongoose.model("Ressource",Data)
+    module.exports=Rouseeurce
